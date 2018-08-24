@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'dndProj';
   orderableLists = [['Item 1a', 'Item 2a', 'Item 3a'], ['Item 1b', 'Item 2b', 'Item 3b']];
   orderableLists1 = ['Item 1c', 'Item 2c', 'Item 3c'];
+  sourceItems=['one', 'two', 'three','four'];
+  targetItems=[];
   nestedLists = [
     {
       "label": "Item 1",

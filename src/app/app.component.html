@@ -24,3 +24,14 @@
 <ngx-dnd-container
   [model]="nestedLists">
 </ngx-dnd-container>
+<h3>Restricted Drag-and-Drop - copy and remove on spill</h3>
+<ngx-dnd-container
+  [model]="sourceItems"
+  [copy]="true"
+  [dropZones]="['oneway-target']">
+</ngx-dnd-container>
+<ngx-dnd-container
+  [model]="targetItems"
+  dropZone="oneway-target"
+  [removeOnSpill]="true">
+</ngx-dnd-container>
