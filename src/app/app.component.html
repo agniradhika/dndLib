@@ -1,9 +1,26 @@
-
+<h3>Using Directives</h3>
 
 <div class="ngx-dnd-container" ngxDroppable>
   <div class="ngx-dnd-item" ngxDraggable>Item 1</div>
   <div class="ngx-dnd-item" ngxDraggable>Item 2</div>
   <div class="ngx-dnd-item" ngxDraggable>Item 3
-    
+
   </div>
 </div>
+
+<h3>Using Components</h3>
+<ngx-dnd-container [model]="orderableLists">
+</ngx-dnd-container>
+
+<h3>Another ex</h3>
+<div class="ngx-dnd-container" ngxDroppable [model]="orderableLists1">
+  <div
+    class="ngx-dnd-item"
+    ngxDraggable
+    [model]="item"
+    *ngFor="let item of orderableLists1">{{item}}</div>
+</div>
+<h3>Nested Lists</h3>
+<ngx-dnd-container
+  [model]="nestedLists">
+</ngx-dnd-container>
